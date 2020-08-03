@@ -63,7 +63,7 @@ Visit http://localhost:3000/
 | POST   | /                    | Ask question                             |
 | GET    | /                    | View all questions                       |
 | GET    | /:questionId/vote    | Upvote or downvote question              |
-| GET    | ?search=q            | Search question by title                 |
+| GET    | /?search=q           | Search question by title                 |
 | POST   | /:questionId/answers | Answer Question                          |
 | GET    | /:questionId/answers | Get all answers from a specific question |
 

@@ -16,11 +16,11 @@ require('./startup/prod')(app);
 
 // req.body
 app.use(express.json());
-
 app.use('/api/v1', usersRoute);
 app.use('/api/v1/questions', questionsRoute);
 app.use('/api/v1/answers', answersRoute);
 
+// base path
 app.get('/', (req, res) => {
   res.status(200).json({
     status: 'success',
@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
   });
 });
 
-// invalid path - must be placed last
+// non-existent path - must be placed last
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
 });
