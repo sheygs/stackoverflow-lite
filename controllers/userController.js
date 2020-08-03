@@ -51,7 +51,7 @@ const signIn = catchAsync(async (req, res, next) => {
     return res.status(400).json({ status: 'error', error: 'Invalid Password' });
   }
   const token = user.generateAuthToken();
-  res.status(400).json({ status: 'success', data: { token } });
+  res.status(200).json({ status: 'success', data: { token } });
 });
 
 const getAllUsers = catchAsync(async (req, res, next) => {
