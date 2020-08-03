@@ -19,41 +19,59 @@ Helper methods have also been defined to enable good code reuse
 
 ## Requirements
 
-- [Node.js](https://nodejs.org/en/) and [MongoDB](https://docs.mongodb.com/manual/installation/) are required.
+- [Node.js](https://nodejs.org/en/)
+- [MongoDB](https://docs.mongodb.com/manual/installation/) are required.
 
-## Installation
+## Installation 📦
 
 ```bash
-$ git clone https://github.com/sheygs13/stackoverflow-lite.git
-
-$ cd stackoverflow-lite
-
-$ npm install
-
+   $ git clone https://github.com/sheygs13/stackoverflow-lite.git
+   $ cd stackoverflow-lite
+   $ npm install
 ```
 
-## API Documentation
-
-- [stackoverflow-lite-api](https://documenter.getpostman.com/view/12241279/T1Dv9EwQ?version=latest)
-
-## Rename _.env.sample_ to _.env_ and set required placeholders
+### Rename _.env.sample_ to _.env_ and fill required placeholders
 
 ```bash
 JWT_SECRET_KEY=XXXXXXXXXXXX
 DB_URL=mongodb+srv://<DB_USERNAME>:<DB_PASSWORD>@cluster0.ywofj.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
 ```
 
-## Install Dependencies
-
-```bash
-   $ npm install
-```
-
-## Start Server
+## Run
 
 ```bash
    $ npm run dev
 ```
+
+Visit http://localhost:3000/
+
+### Available Endpoints
+
+`/api/v1/`
+
+| method | route           | description              |
+| ------ | --------------- | ------------------------ |
+| POST   | /auth/signup    | Register User            |
+| POST   | /auth/signin    | Login User               |
+| GET    | /users          | Get all registered users |
+| GET    | /users?search=q | Search user by name      |
+
+`/api/v1/questions`
+
+| method | route                | description                              |
+| ------ | -------------------- | ---------------------------------------- |
+| POST   | /                    | Ask question                             |
+| GET    | /                    | View all questions                       |
+| GET    | /:questionId/vote    | Upvote or downvote question              |
+| GET    | ?search=q            | Search question by title                 |
+| POST   | /:questionId/answers | Answer Question                          |
+| GET    | /:questionId/answers | Get all answers from a specific question |
+
+`/api/v1/answers`
+
+| method | route | description     |
+| ------ | ----- | --------------- |
+| GET    | /     | Get all answers |
 
 ## Test
 
@@ -61,6 +79,10 @@ DB_URL=mongodb+srv://<DB_USERNAME>:<DB_PASSWORD>@cluster0.ywofj.mongodb.net/<DB_
    $ npm test
 ```
 
-## Live Demo
+## API Documentation
 
-- Visit [stackoverflow-lite](https://stackoverflow-lite.herokuapp.com)
+- Visit [Here](https://documenter.getpostman.com/view/12241279/T1Dv9EwQ?version=latest)
+
+## Examples
+
+- Live demo https://stackoverflow-lite.herokuapp.com
