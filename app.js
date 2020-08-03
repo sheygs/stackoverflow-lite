@@ -21,6 +21,13 @@ app.use('/api/v1', usersRoute);
 app.use('/api/v1/questions', questionsRoute);
 app.use('/api/v1/answers', answersRoute);
 
+app.get('/', (req, res) => {
+  res.status(200).json({
+    status: 'success',
+    message: 'Welcome to the Stackoverflow Lite API',
+  });
+});
+
 // invalid path - must be placed last
 app.all('*', (req, res, next) => {
   next(new AppError(`Can't find ${req.originalUrl} on this server`, 404));
