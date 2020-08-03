@@ -55,6 +55,12 @@ DB_URL=mongodb+srv://<DB_USERNAME>:<DB_PASSWORD>@cluster0.ywofj.mongodb.net/<DB_
    $ npm run dev
 ```
 
+## Test
+
+```bash
+   $ npm test
+```
+
 ## Live Demo
 
 - Visit []()
