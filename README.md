@@ -4,6 +4,23 @@
 
 Stack Overflow Lite API implementing CRUD features.
 
+## Features
+
+The following features have been implemented for this project
+
+```
+ Models for the following features
+  - Answers
+  - Questions
+  - Users
+Helper methods have also been defined to enable good code reuse
+
+```
+
+## Requirements
+
+- [Node.js](https://nodejs.org/en/) and [MongoDB](https://docs.mongodb.com/manual/installation/) are required.
+
 ## Installation
 
 ```bash
@@ -19,7 +36,7 @@ $ npm install
 
 - [stackoverflow-lite-api](https://documenter.getpostman.com/view/12241279/T1Dv9EwQ?version=latest)
 
-## `Rename .env.sample to .env and set database connection`
+## Rename `.env.sample` to `.env` and set database connection
 
 ```bash
 DB_URL=mongodb+srv://<DB_USERNAME>:<DB_PASSWORD>@cluster0.ywofj.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
