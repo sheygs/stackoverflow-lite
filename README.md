@@ -36,19 +36,25 @@ $ npm install
 
 - [stackoverflow-lite-api](https://documenter.getpostman.com/view/12241279/T1Dv9EwQ?version=latest)
 
-## Rename _.env.sample_ to _.env_ and set database connection
+## Rename _.env.sample_ to _.env_ and set required placeholders
 
 ```bash
+JWT_SECRET_KEY=XXXXXXXXXXXX
 DB_URL=mongodb+srv://<DB_USERNAME>:<DB_PASSWORD>@cluster0.ywofj.mongodb.net/<DB_NAME>?retryWrites=true&w=majority
 ```
 
-## Run
+## Install Dependencies
 
 ```bash
    $ npm install
+```
+
+## Start Server
+
+```bash
    $ npm run dev
 ```
 
-## Link
+## Live Demo
 
 - Visit []()
