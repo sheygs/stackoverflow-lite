@@ -1,18 +1,16 @@
 {
-  "name": "stackoverflow-demo",
+  "name": "stackoverflow-lite",
   "version": "1.0.0",
   "description": "Stackoverflow Lite API implementing CRUD features",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "NODE_ENV=production node server.js",
     "dev": "nodemon server.js",
-    "start:prod": "NODE_ENV=production node server.js",
     "test": "mocha -w"
   },
   "engines": {
     "node": "12.16.2"
   },
-  "keywords": [],
   "author": "Olusegun O. Ekoh <segun.ekoh@gmail.com> (https://olusegunekoh.com/)",
   "license": "ISC",
   "dependencies": {
