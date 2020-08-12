@@ -20,7 +20,7 @@ Helper methods have also been defined to enable good code reuse
 ## Requirements
 
 - [Node.js](https://nodejs.org/en/)
-- [MongoDB](https://docs.mongodb.com/manual/installation/) are required.
+- [MongoDB](https://docs.mongodb.com/manual/installation/).
 
 ## Installation 📦
 
@@ -60,8 +60,8 @@ Visit http://localhost:3000/
 
 | method | route                | description                              |
 | ------ | -------------------- | ---------------------------------------- |
-| POST   | /                    | Ask question                             |
-| GET    | /                    | View all questions                       |
+| POST   | /questions           | Ask question                             |
+| GET    | /questions           | View all questions                       |
 | GET    | /:questionId/vote    | Upvote or downvote question              |
 | GET    | /?search=q           | Search question by title                 |
 | POST   | /:questionId/answers | Answer Question                          |
@@ -69,9 +69,9 @@ Visit http://localhost:3000/
 
 `/api/v1/answers`
 
-| method | route | description     |
-| ------ | ----- | --------------- |
-| GET    | /     | Get all answers |
+| method | route    | description     |
+| ------ | -------- | --------------- |
+| GET    | /answers | Get all answers |
 
 ## Test
 
